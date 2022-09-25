@@ -105,6 +105,8 @@ quarkus:
     config:
       profile:
         parent: prod
+    kubernetes:
+      deployment-target: kubernetes
 
 "%kubernetes-17":
   quarkus:
@@ -113,6 +115,8 @@ quarkus:
         parent: prod
     docker:
       dockerfile-jvm-path: "${paths.dockerfile.jvm-17}"
+    kubernetes:
+      deployment-target: kubernetes
 
 "%openshift":
   quarkus:
